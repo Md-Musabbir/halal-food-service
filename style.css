@@ -1,0 +1,380 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1024px;
+    margin: auto;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    width: 1024px;
+}
+
+/* ====================
+header
+====================== */
+
+.header-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.main-title {
+    margin-top: 0.5em;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .5em;
+}
+
+/* ====================
+header
+====================== */
+
+
+/* ====================
+bill section
+====================== */
+.billing-section {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.bill h3 {
+    background-color: rgb(44, 44, 44);
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.bill p {
+    font-size: 23px;
+    font-weight: bolder;
+    line-height: 1.5em;
+}
+
+.bill a,
+.bill p:last-child {
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    line-height: 1.2em;
+    font-size: 20px;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+
+/* ====================
+bill section
+====================== */
+
+/* ====================
+invoice section
+====================== */
+.invoice h2 {
+    font-size: 3.5em;
+    font-weight: normal;
+    line-height: 0.5em;
+}
+
+.invoice h2 span {
+    background-color: black;
+    color: white;
+}
+
+/* ====================
+invoice section
+====================== */
+
+/* ====================
+date section
+====================== */
+
+.date {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+    grid-template-rows: 30px 30px;
+    font-size: 20px;
+}
+
+/* ====================
+date section
+====================== */
+
+
+/* ====================
+table-section 
+====================== */
+
+.table-section {
+    margin-top: 50px;
+    border-collapse: collapse;
+}
+
+
+.table-section td,
+.table-section th {
+    border: 1px solid #444343;
+    text-align: left;
+    padding: 8px;
+}
+
+.table-section th {
+    background-color: #000000;
+    color: white;
+}
+
+.table-section th:first-child {
+    background-color: rgb(255, 196, 0);
+    color: black;
+}
+
+.table-section th:first-child {
+    width: 50%;
+}
+
+.table-section th:nth-child(2),
+.table-section th:nth-child(3),
+.table-section th:nth-child(4) {
+    width: 16.67%;
+}
+
+.table-section td:first-child {
+    background-color: #e7e7e7;
+}
+
+.table-section td:nth-child(2) {
+    background-color: white;
+}
+
+.table-section tr:nth-child(even) {
+    background-color: #e7e7e7;
+}
+
+/* ====================
+table-section 
+====================== */
+
+
+/* ====================
+payment-details-section 
+====================== */
+.payment-details {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.payment-details a {
+    display: block;
+}
+
+
+.payment-details a>span {
+    font-style: italic;
+}
+
+
+/* payment details table */
+.total-amount table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.total-amount table tr:nth-child(1) {
+    background: rgb(138, 143, 138);
+}
+
+.total-amount table tr:nth-child(2),
+.total-amount table tr:nth-child(4),
+.total-amount table tr:nth-child(6) {
+    background: rgb(187, 192, 187);
+}
+
+.total-amount table td {
+    padding: 8px;
+}
+
+.total-amount table tr:nth-child(4) td:first-child,
+.total-amount table tr:nth-child(6) td:first-child {
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+
+/* payment-details numbers */
+
+
+.payment-details .address {
+    padding-top: 60px;
+    padding-left: 25px;
+}
+
+.payment-details .address i {
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+    border-radius: 0 12px 0 12px;
+    background-color: #000;
+}
+
+.payment-details .address i.yellow {
+    background-color: rgb(204, 135, 7);
+}
+
+/* ============ */
+
+
+.payment-details .numbers {
+    padding-top: 25px;
+    border-right: 2px solid gray;
+    margin-top: 25px;
+}
+
+.payment-details .numbers .icon {
+    text-align: center;
+    margin-left: -100px;
+    margin-bottom: 1em;
+}
+
+.payment-details .numbers .icon i {
+    background: rgb(209, 162, 6);
+    padding: 15px;
+    border-radius: 0 15px 0 15px;
+}
+
+.payment-details .numbers a,
+.payment-details .address a,
+.payment-details .address p {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ====================
+payment-details-section 
+====================== */
+
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 0 0;
+}
+form textarea{
+    width: 80%;
+    padding: 15px;
+    font-size: 18px;
+}
+form input[type=button]{
+    padding: 10px 15px;
+    display: block;
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    background: #ff0037;
+    border: 1px solid #e7e7e7;
+}
+
+hr {
+    margin: 5em auto;
+    width: 80%;
+    text-align: center;
+    border-top: 2px dashed #000;
+}
+
+.footer-subtitle {
+    font-size: 3em;
+    text-align: center;
+}
+
+
+/* ====================
+footer section
+====================== */
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: 5em;
+}
+
+.sub-title-lite {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: .5em;
+}
+
+.footer-right {
+    margin-top: -2.5em;
+    font-size: 20px;
+}
+
+.footer-right .numbers-logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer-right .numbers-logo .numbers {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right .numbers-logo .numbers i {
+    background-color: rgb(185, 142, 0);
+    padding: 8px;
+    border-radius: 0 10px 0 10px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.footer-right .numbers-logo .numbers a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-weight: bold;
+}
+
+/* table */
+.footer-right table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.footer-right table td:first-child {
+    text-align: right;
+}
+
+.footer-right table td:last-child {
+    text-align: center;
+}
+
+.footer-right table td {
+    padding: 8px;
+}
+
+.footer-right table tr:last-child {
+    background-color: #000;
+    color: #fff;
+}
+
+/* ====================
+ footer section
+====================== */

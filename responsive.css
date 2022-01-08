@@ -1,0 +1,53 @@
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 90%;
+    }
+
+    .main-title {
+        font-size: 4rem;
+    }
+
+}
+
+
+/* 
+    ============================================
+  */
+
+
+@media screen and (max-width: 1024px) {
+
+    /* body{
+        background: #000;
+    } */
+    .payment-details {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .date {
+        justify-items: end;
+        grid-column-gap: 15px;
+    }
+
+    .invoice h2 {
+        font-size: 1.5em;
+        margin-top: 1em;
+        margin-left: -100px;
+        font-weight: bold;
+    }
+
+    .footer-subtitle {
+        margin-bottom: 0.5em;
+    }
+
+
+    .footer-user {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .footer-right{
+        margin-top: 0;
+    }
+
+}
